@@ -52,7 +52,7 @@ def run_trial(model, seed, data):
     # Initialize model
     net = MhaMlpClassifier(
         hidden_layers=(12,), act_names="Tanh", dropout_rates=None, act_output=None,
-        optim=model["class"], optim_paras=model["paras"], obj_name="F1S", seed=seed, verbose=True
+        optim=model["class"], optim_paras=model["paras"], obj_name="F1S", seed=seed, verbose=False
     )
 
     # Train the model
