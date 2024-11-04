@@ -6,7 +6,7 @@
 
 import numpy as np
 import pandas as pd
-from sklearn.datasets import load_iris, load_breast_cancer, load_digits, fetch_openml, fetch_california_housing
+from sklearn.datasets import load_iris, load_breast_cancer, load_digits, fetch_openml, fetch_california_housing, load_diabetes
 from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.model_selection import train_test_split
@@ -100,7 +100,7 @@ def get_magic_telescope():
 
 
 def get_diabetes():
-    df = fetch_openml(name='diabetes', version=1, as_frame=True, parser="auto")
+    df = load_diabetes(as_frame=True)
     return preprocess_data(df.data, df.target)  # Categorical y
 
 
@@ -113,7 +113,7 @@ def get_california_housing():
     df = fetch_california_housing()
     return preprocess_data(df.data, df.target)
 
-#
+
 # # 1. Iris dataset (Classification)
 # data = load_iris(as_frame=True)
 # datasets['iris'] = preprocess_data(data.data, data.target)

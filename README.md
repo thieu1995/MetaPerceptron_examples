@@ -3,12 +3,12 @@
 ### Setup environment
 
 ```bash
-pip install -R requirements.txt
+pip install -r requirements.txt
 ```
 
-### Run the model
+### Run all the scripts
 
 ```bash
-python main_script.py
+bash main_run.sh
 ```
 
