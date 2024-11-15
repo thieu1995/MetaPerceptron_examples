@@ -1,5 +1,10 @@
 # MetaPerceptron Examples
 
+Seaborn color:
+
+https://www.practicalpythonfordatascience.com/ap_seaborn_palette
+
+
 ### Setup environment
 
 ```bash
