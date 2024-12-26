@@ -63,5 +63,14 @@ python 14_run_tuning.py
 + dataset characteristics: Tabular, Multivariate
 + link: https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators
 
+### 2. PhiUSIIL Phishing URL (Website)
++ samples: 235795
++ features: 54
++ feature type: Real, Categorical, Integer
++ task: Classification
++ subject: Computer Science
++ dataset characteristics: Tabular
++ link: https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset
++ https://www.kaggle.com/code/rutufz/phiusiil-phishing-url-using-deep-learning-model
 
 
