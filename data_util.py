@@ -177,3 +177,43 @@ def get_california_housing():
 #     print(f"  Test data shape: {X_test.shape}")
 #     print(f"  Training target shape: {y_train.shape}")
 #     print(f"  Test target shape: {y_test.shape}\n")
+
+
+def get_cdc_diabetes():
+    df = pd.read_csv("data/cdc_diabetes_health.csv")
+    X = df.drop("Diabetes_binary", axis=1).values
+    y = df["Diabetes_binary"].values
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=TEST_SIZE, random_state=RANDOM_STATE)
+    return X_train, X_test, y_train, y_test
+
+
+def get_PhiUSIIL():
+    df = pd.read_csv("data/PhiUSIIL.csv")
+    X = df.drop("label", axis=1).values
+    y = df["label"].values
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=TEST_SIZE, random_state=RANDOM_STATE)
+    return X_train, X_test, y_train, y_test
+
+
+def get_rt_iot2022():
+    df = pd.read_csv("data/rt_iot2022.csv")
+    X = df.drop("target", axis=1).values
+    y = df["target"].values
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=TEST_SIZE, random_state=RANDOM_STATE)
+    return X_train, X_test, y_train, y_test
+
+
+def get_sepsis_survival():
+    df = pd.read_csv("data/sepsis_survival.csv")
+    X = df.drop("hospital_outcome_1alive_0dead", axis=1).values
+    y = df["hospital_outcome_1alive_0dead"].values
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=TEST_SIZE, random_state=RANDOM_STATE)
+    return X_train, X_test, y_train, y_test
+
+
+def get_skin():
+    df = pd.read_csv("data/skin.csv")
+    X = df.drop("y", axis=1).values
+    y = df["y"].values
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=TEST_SIZE, random_state=RANDOM_STATE)
+    return X_train, X_test, y_train, y_test

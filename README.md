@@ -51,3 +51,17 @@ python 12_run_boxplot.py
 python 13_run_convergence.py
 python 14_run_tuning.py
 ```
+
+# Large-scale dataset
+
+### 1. CDC Diabetes Health Indicators
++ samples: 253680
++ features: 21
++ feature type: Categorical, Integer
++ task: Classification
++ subject: Health and Medicine
++ dataset characteristics: Tabular, Multivariate
++ link: https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators
+
+
+
