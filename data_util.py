@@ -215,5 +215,8 @@ def get_skin():
     df = pd.read_csv("data/skin.csv")
     X = df.drop("y", axis=1).values
     y = df["y"].values
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=TEST_SIZE, random_state=RANDOM_STATE)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=TEST_SIZE, random_state=RANDOM_STATE, shuffle=True, stratify=y)
     return X_train, X_test, y_train, y_test
+
+X_train, X_test, y_train, y_test = get_skin()
+print(X_train.shape, y_train.shape)

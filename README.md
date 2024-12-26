@@ -73,4 +73,30 @@ python 14_run_tuning.py
 + link: https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset
 + https://www.kaggle.com/code/rutufz/phiusiil-phishing-url-using-deep-learning-model
 
+### 3. RT-IoT2022
++ samples: 123117
++ features: 83
++ feature type: Real, Categorical
++ task: Classification, Regression, Clustering
++ subject: Engineering
++ dataset characteristics: Tabular, Sequential, Multivariate
++ link: https://archive.ics.uci.edu/dataset/942/rt-iot2022
++ https://www.kaggle.com/code/azimuddink/azimuddink-rt-iot
 
+### 4. Sepsis Survival Minimal Clinical Records
++ samples: 110341
++ features: 3
++ feature type: Integer
++ task: classification
++ subject: heath and medicine
++ dataset characteristics: multivariate
++ link: https://archive.ics.uci.edu/dataset/827/sepsis+survival+minimal+clinical+records
+
+### 5. Skin Segmentation
++ samples: 245057
++ features: 3
++ feature type: Real
++ task: Classification
++ subject: Computer Science
++ dataset characteristics: Univariate
++ link: https://archive.ics.uci.edu/dataset/229/skin+segmentation
