@@ -199,7 +199,7 @@ def get_rt_iot2022():
     df = pd.read_csv("data/rt_iot2022.csv")
     X = df.drop("target", axis=1).values
     y = df["target"].values
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=TEST_SIZE, random_state=RANDOM_STATE)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=TEST_SIZE, random_state=RANDOM_STATE, shuffle=True, stratify=y)
     return X_train, X_test, y_train, y_test
 
 

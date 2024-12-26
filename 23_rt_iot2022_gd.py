@@ -8,6 +8,7 @@ from pathlib import Path
 import pandas as pd
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from metaperceptron import DataTransformer, MlpClassifier
+from metaperceptron.helpers.preprocessor import LabelEncoder
 from data_util import get_rt_iot2022
 
 
@@ -46,6 +47,10 @@ if __name__ == "__main__":
     dt = DataTransformer(scaling_methods=("minmax",))
     X_train_scaled = dt.fit_transform(X_train)
     X_test_scaled = dt.transform(X_test)
+
+    dty = LabelEncoder()
+    y_train = dty.fit_transform(y_train)
+    y_test = dty.transform(y_test)
 
     data = (X_train_scaled, X_test_scaled, y_train, y_test)
     DATA_NAME = "rt_iot2022"
